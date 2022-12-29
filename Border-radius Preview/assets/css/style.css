@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  background: rgb(4, 1, 36);
+  color: azure;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 4rem;
+}
+
+label {
+  font-size: 2rem;
+}
+
+button {
+  margin: 2rem;
+  width: 50%;
+  justify-self: center;
+  padding: 1rem;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+input {
+  margin: 2rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.input-princesa {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.div-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.user-tool {
+  width: 15rem;
+  height: 15rem;
+  background: rgb(255, 179, 192);
+  margin-left: 22rem;
+  margin-bottom: 5rem;
+}
+
+.preview-container {
+  align-self: center;
+  justify-self: center;
+}
+
+.preview-container button {
+  width: 100%;
+}
+
+.preview-display {
+  width: 40rem;
+  height: 20rem;
+  margin-bottom: 3rem;
+  margin-left: 10rem;
+  background: #fff;
+}

@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --main-color: rgb(0, 0, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--main-color);
+    font-family: 'Open sans', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.title h1{
+    font-size: 6rem;
+    border-radius: 5rem;
+    padding: 1rem;
+    box-shadow: 0 0 4rem white
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50rem;
+    margin: 5rem auto;
+    padding: 5rem;
+    border-radius: 1rem;
+}
+
+.container div{
+    display: flex;
+}
+
+.inp-speed {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 10rem;
+}
+
+.speed {
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    width: 10rem;
+    background: salmon;
+    transition: all 300ms ease-in-out;
+}
+
+.speed:hover {
+    cursor: pointer;
+    background: pink;
+}
+
+.red,
+.blue,
+.green,
+.orange,
+.pink {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    padding: 2rem;
+    margin: 0 2rem;
+    border-radius: 50%;
+}
+
+.red {
+    background: red;
+    animation: light-red 1s infinite;
+}
+
+.blue {
+    background: rgb(0, 68, 255);
+    animation: light-blue 1s infinite;
+}
+
+.green {
+    background: greenyellow;
+    animation: light-green 1s infinite;
+}
+
+.orange {
+    background: orange;
+    animation: light-orange 1s infinite;
+}
+
+.pink {
+    background: rgb(255, 0, 149);
+    animation: light-pink 1s infinite;
+}
+
+.btn-container {
+    position: absolute;
+    bottom: 20rem;
+    display: flex;
+}
+
+.start {
+    margin: 1rem;
+    padding: 1rem;
+    background: green;
+    border-radius: 0.5rem;
+    width: 10rem;
+    color: #fff;
+    transition: all 300ms ease-in-out;
+}
+
+.start:hover {
+    cursor: pointer;
+    background: lightgreen;
+    color: black;
+}
+
+.stop {
+    margin: 1rem;
+    padding: 1rem;
+    background: darkred;
+    border-radius: 0.5rem;
+    width: 10rem;
+    color: #fff;
+    transition: all 300ms ease-in-out;
+}
+
+.stop:hover {
+    cursor: pointer;
+    background: rgb(255, 134, 134);
+    color: black;
+}
+
+.error {
+    color: white;
+    position: absolute;
+    bottom: 15rem;
+    right: 53.5rem;
+    font-size: 2rem;
+    color: red;
+    font-style: italic;
+}
+
+@keyframes light-red {
+  0%,
+  100% {
+    box-shadow: 0 0 4rem rgb(255, 114, 114);
+  }
+  50% {
+    box-shadow: none;
+  } 
+}
+
+@keyframes light-blue {
+    0%,
+    100% {
+        box-shadow: 0rem 0rem 3rem #4da9ff;
+    }
+    50% {
+      box-shadow: none;
+    } 
+}
+
+@keyframes light-green {
+    0%,
+    100% {
+        box-shadow: 0rem 0rem 3rem greenyellow;    }
+    50% {
+      box-shadow: none;
+    } 
+}
+
+@keyframes light-orange {
+    0%,
+    100% {
+        box-shadow: 0rem 0rem 3rem orange;
+    }
+    50% {
+      box-shadow: none;
+    } 
+}
+
+@keyframes light-pink {
+    0%,
+    100% {
+        box-shadow: 0rem 0rem 3rem rgb(240, 71, 255);
+    }
+    50% {
+      box-shadow: none;
+    } 
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Model for testing</title>
+</head>
+<body>
+    
+    <section class="container">
+        
+        <form action="" class="form">
+            <h1>Calculator</h1>
+            <p class="display">
+                <div class="bnt-numbers">
+                    <button class="number" onclick="showDisplay('7')">7</button>
+                    <button class="number" onclick="showDisplay('8')">8</button>
+                    <button class="number" onclick="showDisplay('9')">9</button>
+                    <button class="number" onclick="showDisplay('4')">4</button>
+                    <button class="number" onclick="showDisplay('5')">5</button>
+                    <button class="number" onclick="showDisplay('6')">6</button>
+                    <button class="number" onclick="showDisplay('1')">1</button>
+                    <button class="number" onclick="showDisplay('2')">2</button>
+                    <button class="number" onclick="showDisplay('3')">3</button>
+                </div>
+                <div class="zeroPoint">
+                    <button class="number zero" onclick="showDisplay('0')">0</button>
+                    <button class="point" onclick="showDisplay('.')">.</button>
+                </div>
+                <div class="bnt-operators">
+                    <button class="operator" onclick="showDisplay(' + ')">+</button>
+                    <button class="operator" onclick="showDisplay(' - ')">-</button>
+                    <button class="operator" onclick="showDisplay(' * ')">*</button>
+                    <button class="operator" onclick="showDisplay(' / ')">/</button>
+                </div>
+                    <button class="equal" onclick="calc()">=</button>
+                <div class="bnt-clears">
+                    <button class="clear" onclick="backspace()">C</button>
+                    <button class="clear-all" onclick="cleanAll()">AC</button>
+                </div>
+            </p>
+        </form>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
