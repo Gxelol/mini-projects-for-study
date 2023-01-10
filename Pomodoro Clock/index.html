@@ -21,27 +21,27 @@
 
 </head>
 
-<body onload="template()">
+<body">
   <section class="main-container">
-    <h1 class="title">Pomodoro Clock</h1>
+    <h1 class="section-title">Pomodoro Clock</h1>
 
-    <div class="sessions">
-      <p class="work">Work</p>
-      <p class="break">Break</p>
+    <div class="board">
+      <p class="board__work active">Work</p>
+      <p class="board__break">Break</p>
     </div>
 
     <div class="timer">
-      <p class="minutes">25</p>
+      <p class="timer__minutes">25</p>
       <p>:</p>
-      <p class="seconds">00</p>
+      <p class="timer__seconds">00</p>
     </div>
     
     <div class="controller">
-      <button class="play" onclick="start()">
+      <button class="controller__play" onclick="start()">
         <i class="fa-solid fa-play"></i>
       </button>
 
-      <a href="/" class="reset">
+      <a href="/" class="controller__reset">
         <i class="fa-solid fa-arrow-rotate-left"></i>
       </a>
     </div>
